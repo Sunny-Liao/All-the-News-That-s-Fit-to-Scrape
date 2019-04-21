@@ -99,6 +99,10 @@ app.get("/populateduser", function(req, res) {
   // TIP: Check the models out to see how the Notes refers to the User
 });
 
+
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+mongoose.connect(MONGODB_URI);
+
 // Start the server
 app.listen(process.env.PORT || 3000, function() {
   console.log("App running on port " + PORT + "!");
