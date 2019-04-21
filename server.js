@@ -2,6 +2,9 @@ var express = require("express");
 var logger = require("morgan");
 var mongoose = require("mongoose");
 
+//Scraping tools
+var cheerio = require("cheerio");
+
 var PORT = 3000;
 
 // Require all models
@@ -21,19 +24,23 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/populatedb", { useNewUrlParser: true });
+//mongoose.connect("mongodb://localhost/populatedb", { useNewUrlParser: true });
 
 // When the server starts, create and save a new User document to the db
 // The "unique" rule in the User model's schema will prevent duplicate users from being added to the server
-db.User.create({ name: "Ernest Hemingway" })
-  .then(function(dbUser) {
-    console.log(dbUser);
-  })
-  .catch(function(err) {
-    console.log(err.message);
-  });
+//db.User.create({ name: "Ernest Hemingway" })
+  //.then(function(dbUser) {
+    //console.log(dbUser);
+  //})
+  //.catch(function(err) {
+    //console.log(err.message);
+  //});
 
 // Routes
+
+app.get("/", function(req, res) {
+  res.send(index.html);
+});
 
 // Route for retrieving all Notes from the db
 app.get("/notes", function(req, res) {
