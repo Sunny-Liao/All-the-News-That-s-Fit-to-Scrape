@@ -1,0 +1,55 @@
+.jumbotron {
+    background-image: url("https://www.thecollegeview.com/wp-content/uploads/2017/03/iStock-coffee-newspaper.jpg");
+    background-repeat:no-repeat;
+    -webkit-background-size: cover;
+    height: 300px;
+}
+
+.caption h1{
+    color:white;
+    font-family: "Cormorant SC";
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.caption p{
+    color:white;
+    font-size: 30px;
+}
+
+.btn {
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0 1px 4px rgba(0,0,0,0,4);
+    transition: all 0.4s;
+    display: inline-block;
+    font-weight:400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 1rem 1rem;
+    font-size: 0.8125rem;
+    color: white;
+}
+
+.nav-item {
+    color: white;
+}
+
+.scrape-new {
+    margin-right: 10px;
+}
+
+.article-link {
+    color: white;
+}
+
+.card-header {
+    background-color:#2096f3;
+}
+
+#btnSignUp {
+    display:block;
+    height:40px;
+    
+}

@@ -1,0 +1,30 @@
+<div class="jumbotron text-center">
+      <div class="overlay">
+      </div>
+      <div class="background-image" style="background-image:url('newspaper.jpg')">
+      </div>
+      <div class="caption">
+        <h1>Mongo Scraper</h1>
+        <p>New York Times Edition</p>
+      </div>
+    </div>
+
+
+
+<div class="row">
+    
+    <div>
+        {{#each article}}
+        <div class="card-panel">
+            <h4>{{this.title}}</h4>
+            <a href="/readArticle/{{this._id}}" class="waves-effect waves-light btn float-right" id="btnSignUp">Read Article</a>
+
+        </div>
+
+        {{/each}}
+    </div>
+</div>
+
+
+
+
