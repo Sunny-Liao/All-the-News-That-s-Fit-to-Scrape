@@ -16,11 +16,12 @@
     <div>
         {{#each article}}
         <div class="card-panel">
-            <h4>{{this.title}}</h4>
-            <a href="/readArticle/{{this._id}}" class="waves-effect waves-light btn float-right" id="btnSignUp">Read Article</a>
+            <h4 style="max-width:780px">{{this.title}}</h4>
+            <br>
+            <a href="https://www.nytimes.com{{this.link}}" class="waves-effect waves-light btn float-right" id="btnSignUp">Read Article</a>
+                    <br>            <br>
 
         </div>
-
         {{/each}}
     </div>
 </div>
